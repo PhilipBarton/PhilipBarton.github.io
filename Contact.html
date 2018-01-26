@@ -31,164 +31,197 @@
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
         <link href="css/business-casual.css" rel="stylesheet">
 <style>
-	body {
-  font-family: 'Lato', georgia;
-  font-size: 25px;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(236, 181, 62, 0.95);
-  text-align: center;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
+	* {
+  box-sizing: border-box;
 }
 
-#contact-form {
-  max-width: 90%;
+#wrapper {
+  width: 400px;
   margin: 0 auto;
 }
 
-label {
-  font-weight: 400;
-  cursor: pointer;
-}
-
-textarea,
-input {
-  border: none;
-  outline: none;
-  border-radius: 0;
-  text-align: center;
-  background: none;
-  font-weight: 700;
-  font-family: 'Lato', georgia;
-  font-size: 25px;
-  color: rgba(255, 255, 255, 1);
-  max-width: 90%;
-  padding: 1rem;
-  border: 2px dashed rgba(255, 255, 255, 0);
-  box-sizing: border-box;
-  cursor: text;
-}
-
-textarea {
-  text-align: left;
-  /* overflow:hidden; */
-  
-  resize: none;
-  width: 90%;
-  border-color: rgba(255, 255, 255, 0)
-}
-
-textarea:focus {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 2px dashed rgba(255, 255, 255, 1);
-}
-
-textarea:focus:required:valid {
-  border: 2px solid rgba(255, 255, 255, 0);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-textarea:required:valid {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-input {
-  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
-}
-
-input:required,
-textarea:required {
-  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
-}
-
-input:focus {
-  border-bottom: 2px dashed rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-input:required:valid {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-input:required:invalid {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-::-webkit-input-placeholder {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.4);
-  font-style: italic;
-  font-weight: 400;
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  
-  text-align: center;
-  color: rgba(255, 255, 255, 0.4);
-  font-style: italic;
-  font-weight: 400;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  
-  text-align: center;
-  color: rgba(255, 255, 255, 0.4);
-  font-style: italic;
-  font-weight: 400;
-}
-
-:-ms-input-placeholder {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.4);
-  font-style: italic;
-  font-weight: 400;
-}
-
-.expanding {
-  vertical-align: top;
-}
-
-.send-icn {
-  fill: rgba(255, 255, 255, 1)
-}
-
-.send-icn:hover {
-  fill: rgba(0, 0, 0, 1);
-  cursor: pointer;
-}
-
-button {
-  background: none;
-  border: none;
-  outline: none;
-  margin: 2vmax;
-}
-
-button:hover small {
-  opacity: 1;
-}
-
-small {
-  display: block;
-  opacity: 0;
-}
-
-.website {
-  opacity: 1;
-  font-size: 16px;
-  color: white;
+.envelope {
+  width: 200px;
+  height: 100px;
+  margin: 130px auto 0;
+  background: #ddd;
+  box-shadow: 
+    0 0 1px rgba(0,0,0,0.5),
+    0 1px 3px rgba(0,0,0,0.25);
   position: relative;
-  text-align: center;
-  display: block;
-  margin-top: 7%;
-  
+  perspective: 800px;
+}
+.envelope:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 0 solid rgba(0,0,0,0.25);
+  border-width: 45px 100px;
+  border-top-color: transparent;
+  z-index: 2;
 }
 
-.website a {
-  color: white;
+.envelope .flap {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border: 0 solid transparent;
+  border-width: 50px 100px;
+  z-index: 3;
 }
+.envelope .flap.front {
+  border-left-color: #eee;
+  border-right-color: #eee;
+  border-bottom-color: #ccc;
+  z-index: 3;
+}
+.envelope .flap.front:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  left: -100px;
+  bottom: -50px;
+  border: 0 solid transparent;
+  border-width: 49px 100px;
+  border-bottom-color: #eee;
+}
+
+.envelope .flap.top {
+  border-top-width: 55px;
+  border-top-color: #aaa;
+  z-index: 3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-transform-origin-y: top;
+  transform-origin-y: top;
+  perspective: 800;
+  transform-style: preserve-3d;
+}
+.envelope.open .flap.top {
+  animation-name: flip;
+}
+.envelope .flap.top:after {
+  content: '';
+  position: absolute;
+  left: -100px; /* border-left-width */
+  top: -55px; /* border-top-width */
+  width: 100%;
+  height: 0;
+  border: 0 solid transparent;
+  border-width: 54px 100px;
+  border-top-color: #eee;
+}
+
+.envelope .letter {
+  position: absolute;
+  width: 194px;
+  height: 84px;
+  background: #fff;
+  top: 8px;
+  left: 3px;
+  border: 1px solid #ccc;
+  z-index: 1;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  transform-style: preserve-3d;
+}
+.envelope.open .letter {
+  animation-name: remove;
+}
+.envelope .letter:before,
+.envelope .letter:after {
+  content: '';
+  position: absolute;
+  width: 192px;
+  height: 75%;
+  left: -1px;
+  background: #fff;
+  border: 1px solid #ccc;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  -webkit-transform-origin-y: top;
+  transform-origin-y: top;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg);
+}
+.envelope .letter:before {
+  z-index: 1;
+}
+.envelope.open .letter:before {
+  animation-name: fold-up;
+}
+.envelope .letter:after {
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  -webkit-transform-origin-y: bottom;
+  transform-origin-y: bottom;
+  transform: rotateX(-5deg);
+  bottom: 0;
+}
+.envelope.open .letter:after {
+  animation-name: fold-down;
+}
+
+@keyframes flip {
+  100% {
+    transform: rotateX(180deg);
+    z-index: 1;
+  }
+}
+
+@keyframes remove {
+  50% {
+    top: -120px;
+  }
+  100% {
+    top: 8px;
+    z-index: 3;
+  }
+}
+
+@keyframes fold-up {
+  from {
+  }
+  to {
+    transform: rotateX(140deg);
+  }
+}
+
+@keyframes fold-down {
+  from {
+  }
+  to {
+    transform: rotateX(-140deg);
+  }
+}
+
+#reset {
+  background: #eee;
+  display: inline-block;
+  margin-top: -100px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background: linear-gradient(#eee, #ccc);
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+  float: right;
+}
+#reset:hover {
+  opacity: 0.8;
+}
+#reset:active {
+  background: linear-gradient(#ccc, #eee);
+}
+
 
 	  </style>
     </head>
@@ -235,39 +268,17 @@ small {
   
      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
-<form id="contact-form">
-  <p>Dear Philip,</p>
-  <p>My
-    <label for="your-name">name</label> is
-    <input type="text" name="your-name" id="your-name" minlength="3" placeholder="(your name here)" required> and</p>
-
-  <p>my
-    <label for="email">email address</label> is
-    <input type="email" name="philipbarton815@gmail.com" id="email" placeholder="(your email address)" required>
-  </p>
-
-  <p> I have a
-    <label for="your-message">message</label> for you,</p>
-
-  <p>
-    <textarea name="your-message" id="your-message" placeholder="(your msg here)" class="expanding" required></textarea>
-  </p>
-  <p>
-    <button type="submit">
-      <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
-        <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
-	l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
-      </svg>
-      <small>send</small>
-    </button>
-  </p>
-</form>
-
-<small class='website'>Vist <a href='https://www.erlen.co.uk/' target='_blank'>erlen.co.uk</a> to see my work</small>
- <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
+<div id="wrapper">
+  
+  <div id="reset">Reset</div>
+  
+  <div class="envelope open">
+    <div class="flap front"></div>
+    <div class="flap top"></div>
+    <div class="letter"></div>
+  </div>
+  
+</div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -287,74 +298,16 @@ small {
 
     </script>
 	  <script>
-		  // Auto resize input
-function resizeInput() {
-    $(this).attr('size', $(this).val().length);
-}
-
-$('input[type="text"], input[type="email"]')
-    // event handler
-    .keyup(resizeInput)
-    // resize on page load
-    .each(resizeInput);
-
-
-console.clear();
-// Adapted from georgepapadakis.me/demo/expanding-textarea.html
-(function(){
+$(document).ready(function() {
   
-  var textareas = document.querySelectorAll('.expanding'),
-      
-      resize = function(t) {
-        t.style.height = 'auto';
-        t.style.overflow = 'hidden'; // Ensure scrollbar doesn't interfere with the true height of the text.
-        t.style.height = (t.scrollHeight + t.offset ) + 'px';
-        t.style.overflow = '';
-      },
-      
-      attachResize = function(t) {
-        if ( t ) {
-          console.log('t.className',t.className);
-          t.offset = !window.opera ? (t.offsetHeight - t.clientHeight) : (t.offsetHeight + parseInt(window.getComputedStyle(t, null).getPropertyValue('border-top-width')));
-
-          resize(t);
-
-          if ( t.addEventListener ) {
-            t.addEventListener('input', function() { resize(t); });
-            t.addEventListener('mouseup', function() { resize(t); }); // set height after user resize
-          }
-
-          t['attachEvent'] && t.attachEvent('onkeyup', function() { resize(t); });
-        }
-      };
+  $('#reset').click(function() {
+    $('.envelope').removeClass('open');
+    setTimeout(function() {
+      $('.envelope').addClass('open');
+    }, 500);
+  });
   
-  // IE7 support
-  if ( !document.querySelectorAll ) {
-  
-    function getElementsByClass(searchClass,node,tag) {
-      var classElements = new Array();
-      node = node || document;
-      tag = tag || '*';
-      var els = node.getElementsByTagName(tag);
-      var elsLen = els.length;
-      var pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
-      for (i = 0, j = 0; i < elsLen; i++) {
-        if ( pattern.test(els[i].className) ) {
-          classElements[j] = els[i];
-          j++;
-        }
-      }
-      return classElements;
-    }
-    
-    textareas = getElementsByClass('expanding');
-  }
-  
-  for (var i = 0; i < textareas.length; i++ ) {
-    attachResize(textareas[i]);
-  }
-  
-})();
+});
 
 	  </script>
   </body>
