@@ -29,6 +29,8 @@
       <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Francois+One|Shrikhand|Yellowtail|Allura|Homemade+Apple" rel="stylesheet">
 
     <!-- Custom CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
         <link href="css/business-casual.css" rel="stylesheet">
 <style class="cp-pen-styles">
@@ -62,6 +64,17 @@ p
   background: white;
   z-index: 0;
 }
+    .badge-default {
+        background-color: #ec4392;
+    color: white;
+}
+    .badge-default:hover {
+            background-color: #ec4392;
+  color: purple;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ba
 .card__heading {
   display: inline-block;
   position: absolute;
@@ -213,12 +226,11 @@ dd {
 
     <div class="contact__content">
       <dl>
-	      <dt>Email</dt>
+<h2>Email<span class="badge badge-default btn badge:hover" onclick="copyToClipboard('#p1')">copy<span></h2>
 	      <p id="p1">philipbarton815@gmail.com</p>
-	  <button onclick="copyToClipboard('#p1')">copy</button>
-        <dt>Phone</dt>
+         
+        <h2>Phone<span class="badge badge-default btn" onclick="copyToClipboard('#p2')">copy<span></h2>
          <p id="p2">555-3945834 </p>
-	      <button onclick="copyToClipboard('#p2')">Copy</button>
       </dl>
     </div>
   </section>
@@ -288,6 +300,9 @@ $(document).ready(function() {
 }
 
 	  </script>
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 
 </html>
