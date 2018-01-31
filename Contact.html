@@ -196,14 +196,14 @@ dd {
 		    </div>
   
 	  </div>
+	
+
     <div class="contact__content">
       <dl>
-        <dt>Email</dt>
-        <dd>philipbarton815@gmail.com</dd>
+	      <dt>Email</dt>
+	      <p id="p1"><dd>philipbarton815@gmail.com<button onclick="copyToClipboard('#p1')">copy</buttom></dd></p>
         <dt>Phone</dt>
-        <dd>555-3945834</dd>
-        <dt>Facebook</dt>
-        <dd href="">Philip Barton</dd>
+         <p id="p2"><dd>555-3945834</dd><button onclick="copyToClipboard('#p2')">Copy</button> </p>
       </dl>
     </div>
   </section>
@@ -260,6 +260,16 @@ $(document).ready(function() {
   $('.title').toggleClass('active');
   $('nav').toggleClass('active');
 }); 
+	  </script>
+	  <script>
+		  function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
 	  </script>
   </body>
 
