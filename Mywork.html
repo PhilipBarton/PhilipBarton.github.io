@@ -51,7 +51,7 @@
 
 /* //-- yui-grids style overrides -- */
 body { font-family: Georgia; color: #444; }
-#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
+#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; width:75%; }
 .yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
 
 /* //-- header, body, footer -- */
@@ -68,11 +68,11 @@ body { font-family: Georgia; color: #444; }
 h2 { font-size: 152% }
 h3, h4 { font-size: 122%; }
 h1, h2, h3, h4 { color: #333; }
-p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+p { font-size: 100%; line-height: 18px; padding-right: 3em; color:grey; }
 a { color: #990003 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
-li { line-height: 24px; border-bottom: 1px solid #ccc; }
+
 p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
 p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; }
@@ -138,8 +138,11 @@ a#pdf:hover { background: #222; }
             <a class="nav-link text-uppercase text-expanded" href="about.html">about</a>
             </li>
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="Mywork.html">Portfolio</a>
+              <a class="nav-link text-uppercase text-expanded" href="Mywork.html">Resume</a>
                 <span class="sr-only">(current)</span>
+            </li>
+               <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="photos.html">Photos</a>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="Contact.html">Contact</a>
@@ -155,15 +158,14 @@ a#pdf:hover { background: #222; }
 		<div id="hd">
 			<div class="yui-gc">
 				<div class="yui-u first">
-					<h1>Jonathan Doe</h1>
-					<h2>Web Designer, Director</h2>
+					<h1>Philip Barton</h1>
+					<h2>Musician,Songwriter,Journalist</h2>
 				</div>
 
 				<div class="yui-u">
 					<div class="contact-info">
-						<h3><a id="pdf" href="#">Download PDF</a></h3>
-						<h3><a href="mailto:name@yourdomain.com">name@yourdomain.com</a></h3>
-						<h3>(313) - 867-5309</h3>
+						<h3><a href="mailto:philipbarton815@gmail.com">Email</a></h3>
+						<h3>555-394-5834</h3>
 					</div><!--// .contact-info -->
 				</div>
 			</div><!--// .yui-gc -->
@@ -179,7 +181,7 @@ a#pdf:hover { background: #222; }
 						</div>
 						<div class="yui-u">
 							<p class="enlarge">
-								Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
+								Philip Barton is a dedicated musician who performes funk and soul covers and orignal compostions.He loves to make people laugh,dance, and overall have a goodtime 
 							</p>
 						</div>
 					</div><!--// .yui-gf -->
@@ -191,95 +193,151 @@ a#pdf:hover { background: #222; }
 						<div class="yui-u">
 
 								<div class="talent">
-									<h2>Web Design</h2>
-									<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
+									<h2>Musical Skills</h2>
+									<p><li>The ability to read and write sheet music</li>
+  <li>Very Comfortable improvising on the fly</li>
+  <li>Competent in playing guitar,drums,and bass</li>
+  
+</ul>	</p>
 								</div>
 
 								<div class="talent">
-									<h2>Interface Design</h2>
-									<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
+									<h2>Technical Skills</h2>
+									<p><li>Able to work any digital or analog mixer</li>
+  <li>Able to use any major digital audio workstation</li>
+  	 </p>
 								</div>
 
 								<div class="talent">
-									<h2>Project Direction</h2>
-									<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
+									<h2>Interpersonal Skills</h2>
+									<p><li>Great Communication Skills</li>
+  <li>Ultimate team player does whats best for the group</li>
+  <li>Punctuial</li></p>
 								</div>
 						</div>
 					</div><!--// .yui-gf -->
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Technical</h2>
-						</div>
-						<div class="yui-u">
-							<ul class="talent">
-								<li>XHTML</li>
-								<li>CSS</li>
-								<li class="last">Javascript</li>
-							</ul>
-
-							<ul class="talent">
-								<li>Jquery</li>
-								<li>PHP</li>
-								<li class="last">CVS / Subversion</li>
-							</ul>
-
-							<ul class="talent">
-								<li>OS X</li>
-								<li>Windows XP/Vista</li>
-								<li class="last">Linux</li>
-							</ul>
-						</div>
-					</div><!--// .yui-gf-->
-
+					
 					<div class="yui-gf">
 	
 						<div class="yui-u first">
-							<h2>Experience</h2>
+							<h2 >Performance Experience</h2>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click Here For Posters</button>
 						</div><!--// .yui-u -->
 
 						<div class="yui-u">
 
 							<div class="job">
-								<h2>Facebook</h2>
-								<h3>Senior Interface Designer</h3>
-								<h4>2005-2007</h4>
-								<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+								<h2>Sunday Services at Zion Pentecostal Church </h2>
+								<h3>Drums</h3>
+								<h4>Sept 2016 – Sept 2017 </h4>
 							</div>
 
 							<div class="job">
-								<h2>Apple Inc.</h2>
-								<h3>Senior Interface Designer</h3>
-								<h4>2005-2007</h4>
-								<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+                                   
+								<h2 >Great Gig in The Sky</h2>
+								<h3>Bass and Background Vocals</h3>
+								<h4>January 2018</h4>
 							</div>
 
 							<div class="job">
-								<h2>Microsoft</h2>
-								<h3>Principal and Creative Lead</h3>
-								<h4>2004-2005</h4>
-								<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
+								<h2>Three Rooms</h2>
+								<h3>Guitar,Lead Vocals, And Drums</h3>
+                    <h4>February 2018</h4>
 							</div>
 
 
 							<div class="job last">
-								<h2>International Business Machines (IBM)</h2>
-								<h3>Lead Web Designer</h3>
-								<h4>2001-2004</h4>
-								<p>Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.</p>
+								<h2>Mash Up                      </h2>
+								<h3>Lead Vocals and Rhythm Guitar</h3>
+								<h4>February 2018</h4>
+							</div>
+
+						</div><!--// .yui-u -->
+                        
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Concert Posters</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/Poster1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/Poster2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/Poster3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<div class="yui-u first">
+							<h2>Recording Experience Highlights</h2>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+
+							<div class="job">
+								<h2><a href="http://inputimage.bandcamp.com/album/all-is-uncertain">All is uncertain – Input Image(Album)</a></h2>
+								<h3>Guitar, Bass, Drums, Lead Vocals, Backing Vocals,and Production</h3>
+								<h4>Sept 2013 </h4>
+							</div>
+
+							<div class="job">
+                                   
+								<h2><a href="https://inputimage.bandcamp.com/album/who-are-the-new-romantics">Who Are the New Romantics? - Input Image(Album)</a> </h2>
+								<h3>Guitar, Bass, Drums, Lead Vocals, Backing Vocals, Piano and Production</h3>
+								<h4>January 2015</h4>
+							</div>
+
+							<div class="job">
+								<h2><a href="http://inputimage.bandcamp.com/track/breathless">Breathless – international dating agency(single)</a></h2>
+								<h3>lead vocals, Background vocals, Lead guitar</h3>
+                    <h4>October 2017</h4>
 							</div>
 
 						</div><!--// .yui-u -->
 					</div><!--// .yui-gf -->
-
-
 					<div class="yui-gf last">
 						<div class="yui-u first">
 							<h2>Education</h2>
 						</div>
 						<div class="yui-u">
-							<h2>Indiana University - Bloomington, Indiana</h2>
-							<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+                                  
+
+				<h2>College of North Atlantic – St Johns, Newfoundland
+                     </h2>
+                            <h4>2017-</h4>
+							<h3>	Studying Music Performance, Business, and Technology
+ </h3>
 						</div>
 					</div><!--// .yui-gf -->
 
@@ -288,9 +346,7 @@ a#pdf:hover { background: #222; }
 			</div><!--// yui-main -->
 		</div><!--// bd -->
 
-		<div id="ft">
-			<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
-		</div><!--// footer -->
+		
 
 	</div><!-- // inner -->
 
