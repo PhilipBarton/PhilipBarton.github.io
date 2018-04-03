@@ -134,6 +134,15 @@ h6 {
   list-style: none;
 }
 
+
+@media (min-width: 992px)
+.pl-lg-4, .px-lg-4 {
+    padding-left: -1rem!important;
+}
+@media (min-width: 992px)
+.pr-lg-4, .px-lg-4 {
+    padding-right: 1rem!important;
+}
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
