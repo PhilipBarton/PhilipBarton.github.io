@@ -15,7 +15,8 @@ h6 {
    font-family: 'Risque', cursive;
 }
 .jumbotron jumbotron-fluid{
-     justify-content: center
+     justify-content: center;
+         width: 50%;
 }
 .circle {
   height: 50px;
