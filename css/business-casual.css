@@ -47,6 +47,10 @@ h6 {
     border-top-left-radius: calc(.3rem - 1px);
     border-top-right-radius: calc(.3rem - 1px);
 }
+
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
   top: 50%;
@@ -55,6 +59,7 @@ h6 {
   transform: translateY(-50%);
 }
 
+/* Style the icon bar links */
 .icon-bar a {
   display: block;
   text-align: center;
@@ -64,8 +69,9 @@ h6 {
   font-size: 20px;
 }
 
+/* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 .facebook {
