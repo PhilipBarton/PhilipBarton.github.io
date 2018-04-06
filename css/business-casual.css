@@ -176,6 +176,9 @@ p {
 .section-heading {
   text-transform: uppercase;
 }
+.section-Music {
+    postion: absolute;
+}
 
 .section-heading .section-heading-upper {
   display: block;
