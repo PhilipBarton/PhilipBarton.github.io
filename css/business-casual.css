@@ -18,6 +18,13 @@ h6 {
      justify-content: center;
          width: 50%;
 }
+.jumbotron{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+   background-color: #dc354585;
+    
+}
 .circle {
   height: 50px;
   width: 50px;
@@ -108,13 +115,7 @@ h6 {
   font-size: 30px;
 }
 
-.jumbotron{
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    border-radius: .3rem;
-   background-color: #dc354585;
-    
-}
+
 .typewriter h1 {
   color: #fff;
   font-family: risque;
