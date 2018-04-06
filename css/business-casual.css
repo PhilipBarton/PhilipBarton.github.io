@@ -17,14 +17,12 @@ h6 {
 .jumbotron jumbotron-fluid{
      justify-content: center;
          width: 50%;
-}
-.jumbotron{
-    padding: 2rem 1rem;
+     padding: 2rem 1rem;
     margin-bottom: 2rem;
     border-radius: .3rem;
    background-color: #dc354585;
-    
 }
+
 .circle {
   height: 50px;
   width: 50px;
