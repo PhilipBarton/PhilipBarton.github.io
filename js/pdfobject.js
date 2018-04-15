@@ -153,8 +153,8 @@
     generatePDFJSiframe = function (targetNode, url, pdfOpenFragment, PDFJS_URL, id){
 
         var fullURL = PDFJS_URL + "?file=" + encodeURIComponent(url) + pdfOpenFragment;
-        var scrollfix = (isIOS) ? "-webkit-overflow-scrolling: touch; overflow-y: scroll; " : "overflow: hidden; ";
-        var iframe = "<div style='" + scrollfix + "position: absolute; top: 0; right: 0; bottom: 0; left: 0;'><iframe  " + id + " src='" + fullURL + "' style='border: none; width: 100%; height: 100%;' frameborder='0'></iframe></div>";
+        var scrollfix = (isIOS) ? "-webkit-overflow-scrolling: touch; overflow-x: scroll; " : "overflow: hidden; ";
+        var iframe = "<div style='" + scrollfix + "position: absolute; top: 0; right: 0; bottom: 0; left: 0;'><iframe  " + id + " src='" + fullURL + "' style='border: none; width: 100%; height: 700px;' frameborder='0'></iframe></div>";
         targetNode.className += " pdfobject-container";
         targetNode.style.position = "relative";
         targetNode.style.overflow = "auto";
@@ -170,7 +170,7 @@
         if(targetSelector && targetSelector !== document.body){
             style = "width: " + width + "; height: " + height + ";";
         } else {
-            style = "position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%;";
+            style = "position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 700px;";
         }
 
         targetNode.className += " pdfobject-container";
@@ -197,7 +197,7 @@
             pdfOpenParams = (options.pdfOpenParams) ? options.pdfOpenParams : {},
             fallbackLink = (typeof options.fallbackLink !== "undefined") ? options.fallbackLink : true,
             width = (options.width) ? options.width : "100%",
-            height = (options.height) ? options.height : "100%",
+            height = (options.height) ? options.height : "700px",
             forcePDFJS = (typeof options.forcePDFJS === "boolean") ? options.forcePDFJS : false,
             PDFJS_URL = (options.PDFJS_URL) ? options.PDFJS_URL : false,
             targetNode = getTargetElement(targetSelector),
