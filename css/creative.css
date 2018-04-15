@@ -223,7 +223,7 @@ font-family: 'Shrikhand', cursive;
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("img/intro.jpg");
+  background-image: "img/intro.jpg";
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
