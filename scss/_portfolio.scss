@@ -1,59 +1,58 @@
-.portfolio-item {
-  display: block;
+// Styling for the portfolio section
+.portfolio-box {
   position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
-  .caption {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: fade-out($gray-900, 0.8);
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  .portfolio-box-caption {
     position: absolute;
-    top: 0;
     bottom: 0;
-    z-index: 1;
-    .caption-content {
-      color: $white;
-      margin: auto 2rem 2rem;
-      h2 {
-        font-size: 0.8rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: $white;
+    background: fade-out($primary, .1);
+    @include transition-all;
+    .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center;
+      .project-category,
+      .project-name {
+        padding: 0 15px;
+        @include sans-serif-font;
+      }
+      .project-category {
+        font-size: 14px;
+        font-weight: 600;
         text-transform: uppercase;
       }
-      p {
-        font-weight: 300;
-        font-size: 1.2rem;
+      .project-name {
+        font-size: 18px;
       }
     }
   }
-  @media(min-width: 992px) {
-    max-width: none;
-    margin: 0;
-    .caption {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-      -webkit-clip-path: inset(0px);
-      clip-path: inset(0px);
-      .caption-content {
-        transition: opacity 0.25s;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-bottom: 5rem;
-      }
+  &:hover {
+    .portfolio-box-caption {
+      opacity: 1;
     }
-    img {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out;
-      -webkit-clip-path: inset(-1px);
-      clip-path: inset(-1px);
-    }
-    &:hover {
-      img {
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem);
-      }
-      .caption {
-        background-color: fade-out($primary, 0.1);
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem);
+  }
+  &:focus {
+    outline: none;
+  }
+  @media (min-width: 768px) {
+    .portfolio-box-caption {
+      .portfolio-box-caption-content {
+        .project-category {
+          font-size: 16px;
+        }
+        .project-name {
+          font-size: 22px;
+        }
       }
     }
   }
