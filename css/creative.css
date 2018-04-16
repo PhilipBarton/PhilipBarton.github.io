@@ -180,7 +180,7 @@ font-family: 'Shrikhand', cursive;
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
-    background-color: transparent;
+    background-color: #f05f40;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -193,7 +193,7 @@ font-family: 'Shrikhand', cursive;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #c70039;
+    color: #ffc107;
       font-size: 20px;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
