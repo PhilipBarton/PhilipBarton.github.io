@@ -77,10 +77,11 @@ a:hover {
 
 h1,
 h2 {
-   font-family: 'Shrikhand', cursive;
-        color: white;
-        box-shadow: 2px -1px 9px 0px #1b1e21;
-}
+      font-family: 'Shrikhand', cursive;
+    color: #e41aaf;
+    text-shadow: 3px 0px 8px #1d2124;
+    background-color: #16885e;
+    box-shadow: 0px 1px 0px black;
 }
 h3,
 h4,
