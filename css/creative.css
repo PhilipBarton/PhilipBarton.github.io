@@ -144,8 +144,10 @@ font-family: 'Shrikhand', cursive;
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Homemade Apple', cursive;
+    text-shadow: -1px 1px 4px #1b1e21;
+    /* background-color: #dc3545; */
+    color: #36b5a9;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
