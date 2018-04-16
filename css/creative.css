@@ -149,7 +149,10 @@ font-family: 'Shrikhand', cursive;
     /* background-color: #dc3545; */
     color: #36b5a9;
 }
-
+@media (min-width: 992px)
+#mainNav .navbar-brand {
+    color: #07d098;
+}
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #f05f40;
 }
