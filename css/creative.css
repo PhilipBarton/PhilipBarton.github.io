@@ -186,7 +186,7 @@ font-family: 'Shrikhand', cursive;
     background-color: #f05f40;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: #1cc7b0;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #fff;
