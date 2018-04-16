@@ -160,6 +160,7 @@ font-family: 'Shrikhand', cursive;
   font-weight: 900;
   text-transform: uppercase;
   color: #ff6371;
+      text-shadow: 3px -2px 12px black;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
