@@ -170,6 +170,7 @@ font-family: 'Shrikhand', cursive;
   color: #ff6371;
     font-size: 20px;
   background-color: transparent;
+  text-shadow: 4px 0px 9px black;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
