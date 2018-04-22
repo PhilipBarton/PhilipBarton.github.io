@@ -1,6 +1,4 @@
-donkey:hover .image {
-  opacity: 0.3;
-}
+
 body,
 html {
   width: 100%;
@@ -46,6 +44,10 @@ font-family: 'Domine', serif;
   background: orange;
   color: white;
 }
+.musicnl:hover img {
+  opacity: 0.3;
+}
+
 .google {
   background: #dd4b39;
   color: white;
