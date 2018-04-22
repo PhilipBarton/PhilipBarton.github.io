@@ -44,7 +44,7 @@ font-family: 'Domine', serif;
   background: orange;
   color: white;
 }
-.musicnl:hover img {
+.musicnl img:hover {
   opacity: 0.3;
 }
 
