@@ -30,7 +30,15 @@ font-family: 'Domine', serif;
 .icon-bar a:hover {
   background-color: #000;
 }
-
+.icon-bar img {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+.icon-bar  img:hover {
+  background-color: #000;
+}
 .facebook {
   background: #3B5998;
   color: white;
@@ -41,13 +49,8 @@ font-family: 'Domine', serif;
   color: white;
 }
 .musicnl {
-  background: orange;
-  color: white;
+  background: #17a2b8;
 }
-.musicnl img:hover {
-  opacity: 0.3;
-}
-
 .google {
   background: #dd4b39;
   color: white;
