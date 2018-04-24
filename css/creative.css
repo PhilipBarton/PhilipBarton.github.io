@@ -32,6 +32,7 @@ font-family: 'Domine', serif;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+    width:30px;
 }
 
 /* Style the icon bar links */
@@ -41,7 +42,13 @@ font-family: 'Domine', serif;
   padding: 16px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 11px;
+}
+  .icon-bar img {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease;
 }
 }
 /* Style the social media icons with color, if you want */
