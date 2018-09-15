@@ -174,7 +174,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #343a40;
-font-family: 'Shrikhand', cursive;
+font-family: 'Work Sans', sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
