@@ -199,6 +199,9 @@ font-family: 'Work Sans', sans-serif;
     color: #fff;
     background-color: #007bff;
 }
+.nav-pills .nav-link {
+    border-radius: .25rem;
+}
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: .9rem;
