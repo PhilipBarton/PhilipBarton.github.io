@@ -204,6 +204,10 @@ font-family: 'Work Sans', sans-serif;
     border-radius: .25rem;
   background-colour: pink;
 }
+.nav-link:focus, .nav-link:hover {
+    text-decoration: none;
+    background-color: black;
+}
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: .9rem;
