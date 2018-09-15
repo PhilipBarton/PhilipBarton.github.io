@@ -480,7 +480,13 @@ body {
       </div>
     </section>
 	    </div>
-	
+	    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
 	  <script src="assets/js/jquery.min.js"></script>
 			<script src="js/jquery.scrolly.min.js"></script>
 			<script src="js/jquery.scrollex.min.js"></script>
