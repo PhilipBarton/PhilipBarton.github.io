@@ -173,7 +173,7 @@ img::-moz-selection {
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #343a40;
+  background-color: #495057;
 font-family: 'Work Sans', sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -202,7 +202,7 @@ font-family: 'Work Sans', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   color: #ff6371;
-      text-shadow: 3px -2px 12px black;
+      
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
