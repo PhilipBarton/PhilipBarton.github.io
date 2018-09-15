@@ -38,20 +38,15 @@
  <div id="main">
 	 
   <body>
-	     <div id="wrapper">
-        <div class="overlay"></div>
-	   <div id="page-content-wrapper">
-	  <header id="header">
-				  <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-    			<span class="hamb-middle"></span>
-				<span class="hamb-bottom"></span>
-            </button>
-			</header>
-	  </div>
-		<!-- Nav -->
-	        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-		<ul class="nav sidebar-nav">
+  <header class="navbar navbar-light">
+  <button class="navbar-toggler sidebar-toggler" type="button" data-toggle="sidebar-show">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</header>
+	<!-- Nav -->
+	  <div class="sidebar">
+	        <nav class="sidebar-nav">
+		<ul class="nav">
 					    <li class="sidebar-brand">
                     <a href="#">
                        Brand
@@ -64,6 +59,7 @@
 	         <li><a href="#contact">Contact</a></li>
 		</ul>
 		</nav>
+	  </div>
 
     <header class="masthead text-center text-white d-flex">
 <nav class="social-icons">
@@ -347,7 +343,7 @@
       </div>
     </section>
 	    </div>
-	  </div>
+	
 	  <script src="assets/js/jquery.min.js"></script>
 			<script src="js/jquery.scrolly.min.js"></script>
 			<script src="js/jquery.scrollex.min.js"></script>
