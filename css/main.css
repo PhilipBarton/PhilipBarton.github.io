@@ -3691,6 +3691,7 @@
 		position: relative;
 		text-align: center;
 		overflow: hidden;
+		background-image: url("img/2.jpg");
 	}
 
 		#banner .inner {
