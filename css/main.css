@@ -16,9 +16,30 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline;
+		
 	}
+.navbar-nav, .navbar-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.navbar-nav ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  z-index: 99;
+}
+
+.navbar-nav li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.navbar-nav > li {
+  float: left;
+}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
