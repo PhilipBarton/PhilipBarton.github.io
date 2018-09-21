@@ -40,7 +40,13 @@
 *::after {
   box-sizing: border-box;
 }
-
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 56px);
+    background-image: url(../img/2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
