@@ -53,6 +53,12 @@
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
