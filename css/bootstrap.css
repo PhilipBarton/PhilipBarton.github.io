@@ -9086,7 +9086,11 @@ a.text-dark:hover, a.text-dark:focus {
   img {
     page-break-inside: avoid;
   }
-  p,
+  p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: 'Gloria Hallelujah', cursive;
+}
   h2,
   h3 {
     orphans: 3;
