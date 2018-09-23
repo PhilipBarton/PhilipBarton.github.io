@@ -151,6 +151,7 @@ img::-moz-selection {
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     color: black;
+    font-size: 20px;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
